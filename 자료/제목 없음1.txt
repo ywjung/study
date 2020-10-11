@@ -1,0 +1,18 @@
+docker run -d --privileged -p 8181:8080 -v /jenkins:/var/jenkins_home --name jm_jenkins -u root ywjung99/jenkins:0.1
+
+mv /var/lib/docker/runtimes /var/lib/docker/runtimes-old
+
+dockerd --iptables=false 
+
+docker exec -it 092485d8711d /bin/bash
+
+
+docker run --name squid -it --rm \
+  --publish 3128:3128 \
+  --volume /srv/docker/squid/cache:/var/spool/squid \
+  sameersbn/squid:3.5.27-2 -h
+
+
+export ftp_proxy=http://172.17.0.3:3128
+export http_proxy=http://172.17.0.3:3128
+export https_proxy=http://172.17.0.3:3128

@@ -1,0 +1,53 @@
+docker run -u root --rm -p 8080:8080 --name jenkins_home -v //c/jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock ywjung99/jenkins:v3
+
+https://github.com/ywjung/demo.git
+
+node {
+ stage('Pull') {
+  git 'https://github.com/ywjung/demo.git'
+ }
+ stage('Unit Test') {
+ }
+ stage('Build') {
+  sh(script: 'docker build --force-rm=true -t ywjung/test-demo-app:latest .')
+ }
+ stage('Tag') {
+  sh(script: 'docker tag ywjung/test-demo-app:latest 192.168.129.90/ywjung/test-demo-app:latest')
+ }
+ stage('Push') {
+  sh(script: 'docker push 192.168.129.90/ywjung/test-demo-app:latest')
+ }
+ stage('Deploy') {
+ }
+}
+
+
+
+https://www.edureka.co/community/55640/jenkins-docker-docker-image-jenkins-pipeline-docker-registry
+
+https://medium.com/@gustavo.guss/jenkins-building-docker-image-and-sending-to-registry-64b84ea45ee9
+https://gist.github.com/omegazeng/d9d07a8a1c2bd7bb2cab38e32a12058b
+
+
+
+
+
+
+stage('Pull') {
+ git 'https://github.com/subicura/docker-jenkins-workshop.git'
+ }
+
+ stage('Build') {
+ sh(script: 'docker build --force-rm=true -t ywjung/test-demo-app:latest .')
+ }
+
+
+https://github.com/ywjung/demo.git
+
+stage('Push') {
+ sh(script: 'docker login  192.168.129.90 -u ${DOCKER_USER_ID} -p ${DOCKER_USER_PASSWORD}')
+ sh(script: 'docker push ${DOCKER_USER_ID}/ruby-app:${BUILD_NUMBER}')
+ sh(script: 'docker push ${DOCKER_USER_ID}/ruby-app:latest')
+ }
+ 
+ 
