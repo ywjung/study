@@ -22,3 +22,10 @@ Exit 상태의 모든 컨테이너 삭제하기
 
 docker rm $(docker ps --filter 'status=exited' -a -q)
 ```
+
+
+https://nullsweep.com/dynamic-security-scanning-in-a-ci-zap-scanning-with-jenkins/
+
+https://www.we45.com/blog/step-by-step-guide-integrate-zap-into-jenkins-ci-pipeline
+
+https://github.com/zaproxy/zaproxy/releases/download/v2.9.0/ZAP_2.9.0_Linux.tar.gz
