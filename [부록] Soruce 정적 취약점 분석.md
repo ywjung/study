@@ -26,6 +26,27 @@
 
 
 
+## Architecture
+
+SonarQube 플랫폼은 4개의 컴포넌트로 구성됩니다:
+
+1. 하나의 SonarQube Server는 3개의 메인 프로세스로 구성됩니다:
+
+   1. 하나의 **Web Server**: 개발자 및 관리자들은 품질 스냅샷을 확인하고, SonarQube 인스턴스를 설정할 수 있습니다.
+2. 하나의 **Search Server**: 엘라스틱 서치(Elasticsearch)에 기반한 검색 엔진을 통해 UI에서 검색을 수행합니다.
+   3. 하나의 **Compute Engine Server**: 코드 분석 보고를 담당하며, SonarQube 데이터베이스에 분석 결과를 저장합니다.
+
+2. 하나의 SonarQube **Database**는 다음을 저장합니다:
+
+   - SonarQube 인스턴스 환경 설정(보안, 플러그인 설정 등).
+- project, view 등의 품질 스냅샷.
+   
+3. 서버에 설치된 다양한 **SonarQube Plugins**, 언어, SCM, 통합, 인증 및 가버넌스 플러그인
+
+4. 빌드 및 지속적인 통합 서버에서 프로젝트 분석을 위해 실행하는 하나 혹은 그 이상의 **SonarQube Scanner**
+
+![img](./images/image2017-5-31 4-44-59.png)
+
 
 
 ## 준비 사항
