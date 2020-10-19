@@ -37,3 +37,16 @@ https://www.youtube.com/watch?v=l195D5WT_tE
 
 * WSL restart
 관리 PowerShell 프롬프트에서 : Restart-Service LxssManager
+
+
+
+WSL2에 메모리 할당 강제
+이는 wsl2의 컨테이너에 할당되는 메모리를 강제하는 방식이다. 먼저 자신의 유저 디렉터리 밑( C:\Users\사용자이름 )에. wslconfig 파일을 하나 만들어준다. 그 뒤 아래의 내용을 적어준다
+ 
+```
+[wsl2]
+memory=6GB
+swap=0
+```
+
+memory의 설정은 자신의 컴퓨터 메모리의 여유 정도를 봐가며 설정하자.
