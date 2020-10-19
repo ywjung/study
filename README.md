@@ -66,3 +66,6 @@ docker-compose restart mysql
 
 docker-compose restart -t 30 mysql
 
+
+http://localhost:9000/api/issues/search?componentKeys=b2c_api_prj
+
