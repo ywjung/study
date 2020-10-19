@@ -6,7 +6,7 @@
 
 이번 문서에서는 **Helm**의 사용법에 대해서 알아보겠습니다.
 
-## 2. Prerequisites
+## 2. Prerequhttp://localhost:8080/hystrixisites
 
 - 쿠버네티스 클러스터가 깔려있어야 합니다.
   -> [호롤리한 하루/Install Kubernetes on CentOS/RHEL](https://gruuuuu.github.io/cloud/k8s-install/) 참고.
