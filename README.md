@@ -71,3 +71,5 @@ http://localhost:9000/api/issues/search?componentKeys=b2c_api_prj
 
 https://medium.com/@jyson88/jenkins-github-gradle-%EB%B9%8C%EB%93%9C-7db73c09139b
 
+https://beomseok95.tistory.com/201
+
