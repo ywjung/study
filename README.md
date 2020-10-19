@@ -53,3 +53,16 @@ memory의 설정은 자신의 컴퓨터 메모리의 여유 정도를 봐가며 
 
 이로써 메모리 할당 문제에 대해 임시방편적 대처가 가능하다. 적용이 됐나 확인을 해보자. 우분투 컨테이너에서 free -h로 메모리 사용량을 확인하는 방법으로 진행했다.
 
+
+---
+
+docker compose에서 특정 컨테이너를 재시작해서 테스트하고 싶을 때가 있다.
+
+Failover와 같은 문제를 테스트하려면 특정 시간 멈춤 뒤에 재현할 때 유용하다.
+
+ 
+
+docker-compose restart mysql
+
+docker-compose restart -t 30 mysql
+
