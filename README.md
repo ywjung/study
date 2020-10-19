@@ -32,3 +32,8 @@ https://github.com/zaproxy/zaproxy/releases/download/v2.9.0/ZAP_2.9.0_Linux.tar.
 
 [2019] PAYCO 쇼핑 마이크로서비스 아키텍처(MSA) 전환기
 https://www.youtube.com/watch?v=l195D5WT_tE
+
+
+
+* WSL restart
+관리 PowerShell 프롬프트에서 : Restart-Service LxssManager
