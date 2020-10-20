@@ -76,4 +76,6 @@ https://beomseok95.tistory.com/201
 
 ```
 while true; do 실행을 희망하는 명령어; sleep 반복 희망하는 초(n); done
+
+$ while true; do free -h; sleep 1; done
 ```
