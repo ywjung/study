@@ -40,7 +40,7 @@ SonarQube 플랫폼은 4개의 컴포넌트로 구성됩니다:
 
    - SonarQube 인스턴스 환경 설정(보안, 플러그인 설정 등).
 - project, view 등의 품질 스냅샷.
-   
+  
 3. 서버에 설치된 다양한 **SonarQube Plugins**, 언어, SCM, 통합, 인증 및 가버넌스 플러그인
 
 4. 빌드 및 지속적인 통합 서버에서 프로젝트 분석을 위해 실행하는 하나 혹은 그 이상의 **SonarQube Scanner**
@@ -310,6 +310,10 @@ c27fe6ac1af0        4_jenkins                 "/sbin/tini -- /usr/…"   6 hours
 2. `sonarqube`로 검색해서 추가
 
 ![image-20201018091042557](./images/image-20201018091042557.png)
+
+3. 설치후 재시작
+
+![image-20201019135526427](./images/image-20201019135526427.png)
 
 
 
