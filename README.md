@@ -73,3 +73,7 @@ https://medium.com/@jyson88/jenkins-github-gradle-%EB%B9%8C%EB%93%9C-7db73c09139
 
 https://beomseok95.tistory.com/201
 
+
+```
+while true; do 실행을 희망하는 명령어; sleep 반복 희망하는 초(n); done
+```
