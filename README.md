@@ -52,6 +52,7 @@ swap=0
 memory의 설정은 자신의 컴퓨터 메모리의 여유 정도를 봐가며 설정하자.
 
 이로써 메모리 할당 문제에 대해 임시방편적 대처가 가능하다. 적용이 됐나 확인을 해보자. 우분투 컨테이너에서 free -h로 메모리 사용량을 확인하는 방법으로 진행했다.
+메모리를 설정하지 않으면 물리적 메모리의 80%로 설정된다.
 
 
 ---
@@ -66,3 +67,16 @@ docker-compose restart mysql
 
 docker-compose restart -t 30 mysql
 
+
+http://localhost:9000/api/issues/search?componentKeys=b2c_api_prj
+
+https://medium.com/@jyson88/jenkins-github-gradle-%EB%B9%8C%EB%93%9C-7db73c09139b
+
+https://beomseok95.tistory.com/201
+
+
+```
+while true; do 실행을 희망하는 명령어; sleep 반복 희망하는 초(n); done
+
+$ while true; do free -h; sleep 1; done
+```
