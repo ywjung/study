@@ -339,13 +339,13 @@ c27fe6ac1af0        4_jenkins                 "/sbin/tini -- /usr/…"   6 hours
 
 1. gitlab에 접속(http://localhost:80) 하여 사용자 생성후 Create Project한다.
 
-![image-20201018092705198](C:\Users\ywjun\AppData\Roaming\Typora\typora-user-images\image-20201018092705198.png)
+![image-20201018092705198](./images/image-20201018092705198.png)
 
 
 
 2. Project이름을 입력하고 public으로 프로젝트를 생성한다.
 
-![image-20201018092739677](C:\Users\ywjun\AppData\Roaming\Typora\typora-user-images\image-20201018092739677.png)
+![image-20201018092739677](./images/image-20201018092739677.png)
 
 
 
