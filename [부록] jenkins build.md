@@ -122,6 +122,8 @@ ywjung99/jenkins                           v3                  47d6b3b3f0cc     
 
 ![image-20201102141814038](./images/image-20201102141814038.png)
 
+
+
 ### GitLab  설정
 
 > 1. GitLab의 프로젝트에 들어가서 설정>webhooks를 클릭한다.
@@ -137,3 +139,10 @@ ywjung99/jenkins                           v3                  47d6b3b3f0cc     
 > 아래와 같이 200이 응답되면 Jenkins에서 자동적으로 Builf를 시작하게 될것입니다.
 
 ![image-20201102141216732](./images/image-20201102141216732.png)
+
+
+
+
+
+## Integrate and trigger a Jenkins job from Slack
+
