@@ -80,3 +80,10 @@ while true; do 실행을 희망하는 명령어; sleep 반복 희망하는 초(n
 
 $ while true; do free -h; sleep 1; done
 ```
+
+
+
+### How to disable SSL verification for git
+
+  git config --system http.sslVerify false
+  git config --global http.sslVerify false
